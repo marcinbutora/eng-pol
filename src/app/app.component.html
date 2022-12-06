@@ -1,5 +1,7 @@
- {{ randomWord.eng | json }}
-  <span *ngFor="let polTranslate of randomWord.pol">
-    {{ polTranslate | json }}
-  </span>
-  <span>Good answers: {{ randomWord.pol.length}}</span>
+<div class="container-fluid">
+  <div class="text-center"><h2>{{title}}</h2></div>
+  <div class="text-center"><h5>Words in database: <b>{{wordsInDatabase}}</b></h5></div>
+  <footer class="footer-custom">
+    <p>&copy; 2022 Marcin Butora | background credits: <a href="https://www.pexels.com/photo/big-ben-bridge-castle-city-460672/" target="_blank">pexels.com</a></p>
+  </footer>
+</div>

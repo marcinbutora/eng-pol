@@ -8,8 +8,9 @@ import {Word} from "../model/word";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'eng-pol';
+  title = 'EngPol Words Translate Database';
   dataWords: Word[] = words;
+  wordsInDatabase: number = this.dataWords.length;
 
   randomWord = this.dataWords[Math.floor(Math.random() * this.dataWords.length)];
 }
