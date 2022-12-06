@@ -1,7 +1,16 @@
 <div class="container-fluid">
   <div class="text-center"><h2>{{title}}</h2></div>
   <div class="text-center"><h5>Words in database: <b>{{wordsInDatabase}}</b></h5></div>
+  <div class="container text-center">
+    <form [formGroup]="translateForm">
+      <input class="form-control" type="text" formControlName="engWord" placeholder="{{randomWord.eng}}"><br/>
+      <input class="form-control" type="text" formControlName="polWord" placeholder="{{ randomWord.pol }}"><br/>
+      <button class="btn btn-primary" type="submit">Check translation</button>
+      <br/>
+    </form>
+  </div>
   <footer class="footer-custom">
-    <p>&copy; 2022 Marcin Butora | background credits: <a href="https://www.pexels.com/photo/big-ben-bridge-castle-city-460672/" target="_blank">pexels.com</a></p>
+    <p>&copy; 2022 Marcin Butora | background credits: <a
+      href="https://www.pexels.com/photo/big-ben-bridge-castle-city-460672/" target="_blank">pexels.com</a></p>
   </footer>
 </div>
