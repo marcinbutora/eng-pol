@@ -6,3 +6,29 @@
   color: #fff;
   text-align: center;
 }
+
+h2 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.wrong {
+  color: red;
+}
+
+.good {
+  color: green;
+}
+
+.answers-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin: 1rem;
+  width: 50%;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 2rem;
+}

@@ -2,12 +2,17 @@
   <div class="text-center"><h2>{{title}}</h2></div>
   <div class="text-center"><h5>Words in database: <b>{{wordsInDatabase}}</b></h5></div>
   <div class="container text-center">
-    <form [formGroup]="translateForm">
+    <form [formGroup]="translateForm" (ngSubmit)="checkAnswer()">
       <input class="form-control" type="text" formControlName="engWord" placeholder="{{randomWord.eng}}"><br/>
-      <input class="form-control" type="text" formControlName="polWord" placeholder="{{ randomWord.pol }}"><br/>
-      <button class="btn btn-primary" type="submit">Check translation</button>
-      <br/>
+      <input class="form-control" type="text" formControlName="polWord" placeholder="Type a translation to check"><br/>
+      <div *ngIf="translateForm.controls['polWord'].invalid" class="wrong">Field is required</div>
+      <button class="btn btn-primary" type="submit" (click)="checkAnswer()">Check translation</button>&nbsp;
+      <button class="btn btn-primary" type="submit" (click)="getRandomWord()">Get another word</button>
     </form>
+  </div>
+  <div class="answers-box" *ngIf="isFormSubmitted && translateForm.controls.polWord.touched">
+    <h2 *ngIf="isCorrectAnswer && translateForm.controls.polWord.touched" class="good">Correct answer!</h2>
+    <h2 *ngIf="!isCorrectAnswer && translateForm.controls.polWord.touched" class="wrong">Wrong answer!<br />{{ answersMessage }}</h2>
   </div>
   <footer class="footer-custom">
     <p>&copy; 2022 Marcin Butora | background credits: <a

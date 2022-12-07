@@ -1,6 +1,82 @@
 export const words = [
-  { eng: "smattering of", pol: ["powierzchniowo"]},
-  { eng: "bear with me", pol: ["proszę poczekać", "proszę o chwilę cierpliwości"]},
-  { eng: "by all means", pol: ["oczywiście", "jak najbardziej"]},
-  { eng: "call it a day", pol: ["na dziś koniec", "wystarczy na dziś", "zakończyć pracę"]},
+  {
+    eng: "smattering of",
+    pol: [
+      "powierzchniowo"
+    ]
+  },
+  {
+    eng: "bear with me",
+    pol: [
+      "proszę poczekać",
+      "proszę o chwilę cierpliwości"
+    ]
+  },
+  {
+    eng: "by all means",
+    pol: [
+      "oczywiście",
+      "jak najbardziej"
+    ]
+  },
+  {
+    eng: "call it a day",
+    pol: [
+      "na dziś koniec",
+      "wystarczy na dziś",
+      "zakończyć pracę"
+    ]
+  },
+  {
+    eng: "founder",
+    pol: [
+      "założyciel"
+    ]
+  },
+  {
+    eng: "annual turnover",
+    pol: [
+      "roczny obrót"
+    ]
+  },
+  {
+    eng: "subsidiary",
+    pol: [
+      "filia",
+      "oddział (przedsiębiorstwa)"
+    ]
+  },
+  {
+    eng: "division",
+    pol: [
+      "dział",
+      "oddział",
+      "wydział"
+    ]
+  },
+  {
+    eng: "common",
+    pol: [
+      "pospolity",
+      "powszechny",
+      "zwykły",
+      "wspólny"
+    ]
+  },
+  {
+    eng: "essential",
+    pol: [
+      "niezbędny",
+      "podstawowy",
+      "konieczny"
+    ]
+  },
+  {
+    eng: "scope",
+    pol: [
+      "zakres",
+      "zasięg",
+      "możliwość"
+    ]
+  }
 ]
