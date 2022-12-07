@@ -78,5 +78,72 @@ export const words = [
       "zasięg",
       "możliwość"
     ]
-  }
+  },
+  {
+    eng: "decent",
+    pol: [
+      "godziwy",
+      "przyzwoity",
+      "porządny"
+    ]
+  },
+  {
+    eng: "to present",
+    pol: [
+      "przedstawiać",
+      "prezentować",
+      "występować"
+    ]
+  },
+  {
+    eng: "shoulder-to-shoulder",
+    pol: [
+      "ramię w ramię"
+    ]
+  },
+  {
+    eng: "blend",
+    pol: [
+      "mieszać",
+      "łączyć"
+    ]
+  },
+  {
+    eng: "starightforward",
+    pol: [
+      "jasny",
+      "prosty",
+      "przystępny",
+      "prostolinijny",
+      "szczery"
+    ]
+  },
+  {
+    eng: "incredibly",
+    pol: [
+      "niesamowicie",
+      "niewiarygodnie"
+    ]
+  },
+  {
+    eng: "compete",
+    pol: [
+      "konkurować"
+    ]
+  },
+  {
+    eng: "offset",
+    pol: [
+      "zrównoważyć",
+      "skompensować"
+    ]
+  },
+  {
+    eng: "get away from",
+    pol: [
+      "uciekać od",
+      "wyrywać się skądś",
+      "odchodzić od tematu"
+    ]
+  },
 ]
