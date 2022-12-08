@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {words} from "../mock-data/words";
 import {Word} from "../model/word";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,11 @@ export class AppComponent implements OnInit {
     polWord: new FormControl("",Validators.required)
   })
 
+  constructor(private titleService: Title) {
+  }
+
   ngOnInit() {
+    this.titleService.setTitle(this.title);
     this.loadFilteredDataByRandomWord(this.randomWord.eng);
   }
 
