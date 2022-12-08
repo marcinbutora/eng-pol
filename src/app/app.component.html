@@ -3,7 +3,7 @@
   <div class="text-center"><h5>Words in database: <b>{{wordsInDatabase}}</b></h5></div>
   <div class="container text-center">
     <form [formGroup]="translateForm" (ngSubmit)="checkAnswer()">
-      <input class="form-control" type="text" formControlName="engWord" placeholder="{{randomWord.eng}}"><br/>
+      <input class="form-control" type="text" formControlName="engWord" placeholder="{{randomWord.eng}}" [disabled]="isDisabled"><br/>
       <input class="form-control" type="text" formControlName="polWord" placeholder="Type a translation to check"><br/>
       <button class="btn btn-primary" type="submit" (click)="checkAnswer()">Check translation</button>&nbsp;
     </form>

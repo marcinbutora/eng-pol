@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   filteredByName: Word[] = [];
   isFormSubmitted: boolean = false;
   isCorrectAnswer: boolean = false;
+  isDisabled: boolean = true;
   answersMessage: string = "";
   randomWord = this.dataWords[Math.floor(Math.random() * this.dataWords.length)];
 
